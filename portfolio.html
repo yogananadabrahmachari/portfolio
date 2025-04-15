@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Satya Kumar | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f0f23, #1a1a2e);
+      color: #fff;
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #111;
+    }
+    header h1 {
+      color: #fff;
+    }
+    nav a {
+      color: #ccc;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      position: relative;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    nav a i {
+      margin-right: 6px;
+    }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 3rem 2rem;
+    }
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+    }
+    .hero-text h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .hero-text h1 span {
+      color: #9f8bff;
+    }
+    .hero-text p {
+      margin: 1rem 0;
+      color: #ccc;
+      max-width: 500px;
+    }
+    .typing-wrapper {
+      height: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .typing {
+      background-color: #2a2550;
+      color: #9f8bff;
+      display: inline-block;
+      padding: 0.4rem 1rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid #fff;
+      animation: blink 0.75s step-end infinite;
+    }
+    @keyframes blink {
+      50% {
+        border-color: transparent;
+      }
+    }
+    .buttons {
+      margin: 1.5rem 0;
+    }
+    .buttons a {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-right: 1rem;
+      font-weight: bold;
+    }
+    .download {
+      background-color: #9f8bff;
+      color: white;
+    }
+    .contact {
+      border: 2px solid #444;
+      color: white;
+    }
+    .socials {
+      margin-top: 1rem;
+    }
+    .socials a {
+      color: #ccc;
+      margin-right: 10px;
+      font-size: 1.2rem;
+    }
+    .profile-pic {
+      flex: 1;
+      min-width: 250px;
+      text-align: center;
+      transition: transform 0.3s ease-in-out;
+    }
+    .profile-pic img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #9f8bff;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .profile-pic img:hover {
+      transform: scale(1.1);
+    }
+    .skills-section {
+      background-color: #0f0f23;
+      padding: 4rem 2rem;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(159, 139, 255, 0.2), 0 -4px 20px rgba(159, 139, 255, 0.05);
+      border-radius: 20px;
+    }
+    .skills-section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .skills-section p {
+      color: #ccc;
+      margin-bottom: 3rem;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .skill-box {
+      background-color: #1a1a2e;
+      border-radius: 12px;
+      padding: 2rem;
+      transition: transform 0.3s ease;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    }
+    .skill-box:hover {
+      transform: scale(1.05);
+    }
+    .skill-box h3 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .skill-tags span {
+      display: inline-block;
+      background-color: #333;
+      color: #ccc;
+      padding: 0.3rem 0.8rem;
+      border-radius: 12px;
+      margin: 0.2rem;
+      font-size: 0.85rem;
+    }
+    .trio-row {
+      display: flex;
+      gap: 2rem;
+      margin-top: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .trio-row .skill-box {
+      flex: 1;
+      min-width: 250px;
+    }
+    .education-section {
+      background-color: #0f0f23;
+      padding: 4rem 2rem;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(159, 139, 255, 0.2), 0 -4px 20px rgba(159, 139, 255, 0.05);
+      border-radius: 20px;
+      margin-top: 4rem;
+    }
+    .education-section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .education-section p {
+      color: #ccc;
+      margin-bottom: 3rem;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <h1>chari</h1>
+        <nav>
+          <a href="#about"><i class="fas fa-user"></i>About</a>
+          <a href="#skills"><i class="fas fa-cogs"></i>Skills</a>
+          <a href="#projects"><i class="fas fa-code"></i>Projects</a>
+          <a href="#contact"><i class="fas fa-envelope"></i>Contact</a>
+        </nav>
+      </header>
+    
+      <section class="hero">
+        <div class="hero-text">
+          <div class="typing-wrapper">
+            <div id="typing" class="typing"></div>
+          </div>
+          <h1>Hello, I'm <span>Yogananda brahmachari</span></h1>
+          <p>A passionate developer crafting elegant and performant web applications.</p>
+          <div class="buttons">
+            <a href="#" class="download">Download CV</a>
+            <a href="#contact" class="contact">Contact Me</a>
+          </div>
+          <div class="socials">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="profile-pic">
+          <img src="D:\portfolio\chari1.jpg" alt="chari">
+        </div>
+      </section>
+    
+      <section class="skills-section">
+        <h2>Technical Skills</h2>
+        <p>A diverse toolkit built over years of solving complex problems</p>
+        <div class="skills-grid">
+          <div class="skill-box">
+            <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+            <div class="skill-tags">
+              <span>React</span><span>Next.js</span><span>TypeScript</span><span>Tailwind CSS</span><span>Redux</span><span>HTML/CSS</span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <h3><i class="fas fa-server"></i> Backend</h3>
+            <div class="skill-tags">
+              <span>Node.js</span><span>Express</span><span>Python</span><span>Java</span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <h3><i class="fas fa-database"></i> Database</h3>
+            <div class="skill-tags">
+              <span>MongoDB</span><span>MySQL</span><span>Firebase</span>
+            </div>
+          </div>
+        </div>
+        <div class="trio-row">
+          <div class="skill-box">
+            <h3><i class="fas fa-terminal"></i> DevOps</h3>
+            <div class="skill-tags">
+              <span>Docker</span><span>AWS</span><span>Git</span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <h3><i class="fas fa-code"></i> Languages</h3>
+            <div class="skill-tags">
+              <span>JavaScript</span><span>TypeScript</span><span>Python</span><span>Java</span><span>SQL</span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <h3><i class="fas fa-tools"></i> Other</h3>
+            <div class="skill-tags">
+              <span>GraphQL</span><span>REST API</span><span>WebSockets</span><span>OAuth</span><span>Microservices</span><span>Unit Testing</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="education-section">
+        <h2>Education</h2>
+    
+        <div class="edu-item">
+          <h3>Bachelor of Computer Science and Engineering</h3>
+          <h4>Lovely Professional University</h4>
+          <p>Pursuing a Bachelor's degree with a focus on full-stack development, data structures, and algorithms. Gained a strong foundation in programming languages, web development, and software engineering principles.</p>
+          <div class="education-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>SQL</span><span>C++</span><span>Web Development</span><span>Data Structures</span><span>Algorithms</span>
+          </div>
+        </div>
+    
+        <div class="edu-item">
+          <h3>Diploma</h3>
+          <h4>SIR C.R REDDY POLYTECHNIC</h4>
+          <p>Completed my Diploma education with a focus on Department subjects. Developed a strong analytical and problem-solving mindset.</p>
+        </div>
+    
+        <div class="edu-item">
+          <h3>Marticulation</h3>
+          <h4>SRI GOWTHAM E.M HIGH SCHOOL</h4>
+          <p>Completed my secondary education with a focus on science subjects. Developed a strong analytical and problem-solving mindset.</p>
+        </div>
+      </section>
+    
+      <script>
+        const phrases = ["Backend Developer", "Fullstack Developer", "DevOps Developer"];
+        const typingElement = document.getElementById("typing");
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+    
+        function type() {
+          const currentPhrase = phrases[phraseIndex];
+          if (isDeleting) {
+            typingElement.textContent = currentPhrase.substring(0, charIndex--);
+          } else {
+            typingElement.textContent = currentPhrase.substring(0, charIndex++);
+          }
+    
+          if (!isDeleting && charIndex === currentPhrase.length + 1) {
+            isDeleting = true;
+            setTimeout(type, 1000);
+          } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            phraseIndex = (phraseIndex + 1) % phrases.length;
+            setTimeout(type, 500);
+          } else {
+            setTimeout(type, isDeleting ? 50 : 100);
+          }
+        }
+    
+        type();
+      </script>
+</body>
+</html>
